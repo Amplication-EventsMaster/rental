@@ -20,6 +20,7 @@ export const CarShow = (props: ShowProps): React.ReactElement => {
       <SimpleShowLayout>
         <TextField label="color" source="color" />
         <DateField source="createdAt" label="Created At" />
+        <TextField label="description" source="description" />
         <TextField label="ID" source="id" />
         <TextField label="license number" source="licenseNumber" />
         <TextField label="model" source="model" />
