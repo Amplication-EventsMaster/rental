@@ -1,0 +1,39 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Car {
+  color         String?
+  createdAt     DateTime @default(now())
+  description   String?
+  id            String   @id @default(cuid())
+  licenseNumber String?
+  model         String?
+  rentals       Rental[]
+  updatedAt     DateTime @updatedAt
+}
+
+model Customer {
+  createdAt DateTime @default(now())
+  firstName String?
+  id        String   @id @default(cuid())
+  rentals   Rental[]
+  updatedAt DateTime @updatedAt
+}
+
+model Rental {
+  car        Car?      @relation(fields: [carId], references: [id])
+  carId      String?
+  createdAt  DateTime  @default(now())
+  customer   Customer? @relation(fields: [customerId], references: [id])
+  customerId String?
+  endDate    DateTime?
+  id         String    @id @default(cuid())
+  startDate  DateTime?
+  updatedAt  DateTime  @updatedAt
+}
