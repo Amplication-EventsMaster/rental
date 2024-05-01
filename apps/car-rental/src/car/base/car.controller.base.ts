@@ -54,6 +54,7 @@ export class CarControllerBase {
       select: {
         color: true,
         createdAt: true,
+        description: true,
         id: true,
         licenseNumber: true,
         model: true,
@@ -81,6 +82,7 @@ export class CarControllerBase {
       select: {
         color: true,
         createdAt: true,
+        description: true,
         id: true,
         licenseNumber: true,
         model: true,
@@ -107,6 +109,7 @@ export class CarControllerBase {
       select: {
         color: true,
         createdAt: true,
+        description: true,
         id: true,
         licenseNumber: true,
         model: true,
@@ -144,6 +147,7 @@ export class CarControllerBase {
         select: {
           color: true,
           createdAt: true,
+          description: true,
           id: true,
           licenseNumber: true,
           model: true,
@@ -180,6 +184,7 @@ export class CarControllerBase {
         select: {
           color: true,
           createdAt: true,
+          description: true,
           id: true,
           licenseNumber: true,
           model: true,

@@ -16,6 +16,7 @@ export const CarCreate = (props: CreateProps): React.ReactElement => {
     <Create {...props}>
       <SimpleForm>
         <TextInput label="color" source="color" />
+        <TextInput label="description" multiline source="description" />
         <TextInput label="license number" source="licenseNumber" />
         <TextInput label="model" source="model" />
         <ReferenceArrayInput

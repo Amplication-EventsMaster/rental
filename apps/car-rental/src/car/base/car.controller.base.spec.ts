@@ -20,6 +20,7 @@ const existingId = "existingId";
 const CREATE_INPUT = {
   color: "exampleColor",
   createdAt: new Date(),
+  description: "exampleDescription",
   id: "exampleId",
   licenseNumber: "exampleLicenseNumber",
   model: "exampleModel",
@@ -28,6 +29,7 @@ const CREATE_INPUT = {
 const CREATE_RESULT = {
   color: "exampleColor",
   createdAt: new Date(),
+  description: "exampleDescription",
   id: "exampleId",
   licenseNumber: "exampleLicenseNumber",
   model: "exampleModel",
@@ -37,6 +39,7 @@ const FIND_MANY_RESULT = [
   {
     color: "exampleColor",
     createdAt: new Date(),
+    description: "exampleDescription",
     id: "exampleId",
     licenseNumber: "exampleLicenseNumber",
     model: "exampleModel",
@@ -46,6 +49,7 @@ const FIND_MANY_RESULT = [
 const FIND_ONE_RESULT = {
   color: "exampleColor",
   createdAt: new Date(),
+  description: "exampleDescription",
   id: "exampleId",
   licenseNumber: "exampleLicenseNumber",
   model: "exampleModel",
